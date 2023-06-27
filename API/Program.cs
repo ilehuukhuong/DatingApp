@@ -49,7 +49,9 @@ app.UseCors(builder => builder
     .AllowAnyHeader()
     .AllowAnyMethod()
     .AllowCredentials()
-    .WithOrigins("https://localhost:4200"));
+    .WithOrigins("https://localhost:4200")
+    .WithOrigins("https://idatingapp.vercel.app")
+    .WithOrigins("https://idatingapp-ilehuukhuong.vercel.app"));
 
 app.UseAuthentication();
 app.UseAuthorization();
