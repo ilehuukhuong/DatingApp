@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  apiUrl: 'api/',
-  hubUrl: 'hubs/'
+  apiUrl: 'https://idatingapp.fly.dev/api/',
+  hubUrl: 'https://idatingapp.fly.dev/hubs/'
 };

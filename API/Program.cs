@@ -20,7 +20,7 @@ if (builder.Environment.IsDevelopment())
 else
 {
     // Use connection string provided at runtime by FlyIO.
-    var connUrl = Environment.GetEnvironmentVariable("DATABASE_URL");
+    var connUrl = Environment.GetEnvironmentVariable("DefaultConnection");
 
     // Parse connection URL to connection string for Npgsql
     connUrl = connUrl.Replace("postgres://", string.Empty);
